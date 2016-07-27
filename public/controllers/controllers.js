@@ -6,9 +6,9 @@ function($scope, $http){
   
 
     var refresh = function() {
-        $http.get('/contactlist').success(function(response){
+        $http.get('/contactbookdb').success(function(response){
           console.log("I got the data I requested in json");
-        $scope.contactlist = response;
+        $scope.contactbookdb = response;
         $scope.contact = "";
       });
     }
@@ -17,7 +17,7 @@ function($scope, $http){
 
     $scope.addContact = function(){
       console.log($scope.contact);
-      $http.post('/contactlist', $scope.contact).success(function(response){
+      $http.post('/contactbookdb', $scope.contact).success(function(response){
         console.log(response);
         refresh();
       })
@@ -25,21 +25,21 @@ function($scope, $http){
 
     $scope.remove = function(id){
       console.log(id);
-      $http.delete('/contactlist/' + id).success(function(response){
+      $http.delete('/contactbookdb/' + id).success(function(response){
           refresh();
       });
     };
 
     $scope.edit = function(id){
       console.log(id);
-      $http.get('/contactlist/' + id).success(function(response){
+      $http.get('/contactbookdb/' + id).success(function(response){
         $scope.contact = response;
       });
     };
 
     $scope.update = function() {
       console.log($scope.contact._id);
-      $http.put('/contactlist/' + $scope.contact._id, $scope.contact).success(function(response){
+      $http.put('/contactbookdb/' + $scope.contact._id, $scope.contact).success(function(response){
         refresh();
       })
     };
