@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-  <title>FULLSTANGULAR2</title>
+  <title>CONTACTBOOK</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
@@ -29,7 +29,7 @@
           <td> <button class="btn btn-primary" ng-click="addContact()">add contact</button></td>
           <td><button class="btn btn-info" ng-click="update()">update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">clear</button></td>
         </tr>
-        <tr ng-repeat="contact in contactlist"> 
+        <tr ng-repeat="contact in contactbookdb"> 
           <td>{{contact.name}}</td>
           <td>{{contact.email}}</td>
           <td>{{contact.number}}</td>
