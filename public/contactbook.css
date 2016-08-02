@@ -1,0 +1,18 @@
+.btn.btn-primary:hover{
+  transition: 0.5s ease 0s;
+  background-color:blue;
+}
+
+.btn.btn-info:hover{
+  transition: 0.5s ease 0s;
+  background-color:blue;
+}
+.btn.btn-danger:hover{
+  transition:0.5s ease 0s;
+  background-color: red;
+}
+
+.btn.btn-warning:hover{
+  transition:0.5s ease 0s;
+  background-color: yellow;
+}
