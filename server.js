@@ -57,3 +57,12 @@ app.put('/contactbookdb/:id', function(req, res){
 
 app.listen(3200);
 console.log("server running on PORT 3200!")
+
+// expressjs helps organize the web app into an mvc structure on the server side, it basically helps manage everything from routes to handling requests and views, then a database such as mongodb, etc. can then be used provide a backend for this nodejs application
+//mongodb is the database used
+//requiring mongojs requires the mongojs module so we can use it
+// var db = mongojs specifies contactbookdb is the database used within mongodb
+// bodyParser is needed to for the server to parse through body of the data of the input, so we require it
+// app.get is used to define the route
+// db.contactbookdb.find has the server find the data
+// app.get, app.post, and so on and so forth

@@ -50,3 +50,11 @@ function($scope, $http){
 
 
 }]);
+
+//$scope is the glue between the controller and the view
+//to get data from the server instead of the controller, the protocol $http.get is used
+//'/contactbookdb' is the route created to get data 
+// $scope.contactbookdb = response will place the data into the html 
+// $scope.addContact=function() sends data from the input boxes on the html file and then via the $http.post request, is sent to the server to be processed into the database, but the new data won't show on the view, just yet
+// to make the new data show on the view, the page has to be refreshed, so a new function called refresh(); is created
+// so on and so forth with the rest of the http protocol requests 
