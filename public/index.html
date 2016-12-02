@@ -11,10 +11,14 @@
   </div>
 
   <div class="container" ng-controller="AppCtrl">
-    <h3>Filter by name</h3> <!--this is new--> 
-    <input type="text" ng-model="filter.name" placeholder="filter by letter"> <!--this is new-->
     <table class="table">
       <thead>
+        <tr>
+           <h3>Filter by name</h3> <!--this is new--> 
+           <input type="text" ng-model="filter.name" placeholder="filter by letter"> <!--this is new-->
+           <h3>Filter by number</h3>
+           <input type="text" ng-model="filter.number" placeholder="filter by number"><!--this is definitely new-->
+        </tr>
         <tr>
           <th>name</th>
           <th>email</th>
@@ -31,7 +35,7 @@
           <td> <button class="btn btn-primary" ng-click="addContact()">add contact</button></td>
           <td><button class="btn btn-info" ng-click="update()">update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">clear</button></td>
         </tr>
-        <tr ng-repeat="contact in contactbookdb | filter:filter"> 
+        <tr ng-repeat="contact in contactbookdb | filter:filter"> <!--this is new-->
           <td>{{contact.name}}</td>
           <td>{{contact.email}}</td>
           <td>{{contact.number}}</td>
