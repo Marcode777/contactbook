@@ -23,6 +23,9 @@ h1{
 
 .jumbotron{
   background-color: #80b3ff;
+  background-image: url('http://2.bp.blogspot.com/-u5x4TJ35qMU/VXsPCGBVxNI/AAAAAAAAGS0/Khjv17QODqk/s1600/New%2BYork%2BCity%2Bsilhouette.png');
+  background-size:100%;
+  min-height: 300px;
 }
 
 
