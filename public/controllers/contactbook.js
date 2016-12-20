@@ -1,1 +1,1 @@
-TweenMax.from("h1", 1.5, {x:-600});
+TweenMax.from("h1", 1.5, {x:-600, ease:Back.easeOut});
