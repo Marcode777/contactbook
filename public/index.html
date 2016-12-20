@@ -34,8 +34,8 @@
       </thead>
       <tbody>
         <tr>
-          <td><input class="form-control" ng-model="contact.name"></td>
-          <td><input class="form-control" ng-model="contact.email"></td>
+          <td><input type="text" class="form-control" ng-model="contact.name"></td>
+          <td><input type="email" class="form-control" ng-model="contact.email"></td>
           <td><input class="form-control" ng-model="contact.number"></td>
           <td> <button class="btn btn-primary" ng-click="addContact()">add contact</button></td>
           <td><button class="btn btn-info" ng-click="update()">update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">clear</button></td>
@@ -71,6 +71,15 @@ ng-model directive: binds an input, select, textarea, or custom form control to 
 ng-controller directive: attaches a controller class to the view; a key aspect of how Angular supports the principles of the Model-View-Design (MYC) pattern
 ng-repeat directive: instantiates a template once per item from a collection
 ng-click directive: allows you to specify custom behavior when an element is clicked-->
+
+<!-- JSON Example
+{
+"employees":[
+    {"firstName":"John", "lastName":"Doe"}, 
+    {"firstName":"Anna", "lastName":"Smith"},
+    {"firstName":"Peter", "lastName":"Jones"}
+]
+}-->
 
 
 
