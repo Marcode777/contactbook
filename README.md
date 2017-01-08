@@ -9,3 +9,6 @@ and then back to the first terminal,
   run the command: node server
 
 improved version of FULLSTANGULAR2
+
+
+sometimes some of the functions will throw a 500 internal server error, the solution was to update node version by first running the command, sudo npm install n -g, and then the command, sudo n stable
