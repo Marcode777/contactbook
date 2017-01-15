@@ -7,6 +7,7 @@ open a third terminal shell,
   run the command: mongo 
 and then back to the first terminal, 
   run the command: node server
+app should show up at localhost:3200
 
 improved version of FULLSTANGULAR2
 
